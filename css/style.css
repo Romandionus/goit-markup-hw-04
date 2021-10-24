@@ -113,7 +113,6 @@ body {
 }
 
 .menu-list-link {
-  display: inline-block;
   margin-right: 50px;
 }
 .menu-list-link:last-child {
@@ -121,9 +120,22 @@ body {
 }
 
 /* ----------------почта и телефон---------------- */
+.header-contacts-link-icon::before {
+  display: inline-block;
+  align-items: center;
+  width: 16px;
+  height: 12px;
+  content: "";
+  margin-right: 10px;
+  background-image: url(../images/mail-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .header-contacts-link {
   margin-right: 50px;
 }
+
 .header-contacts-link:last-child {
   margin-right: 0;
 }
@@ -161,10 +173,20 @@ body {
 }
 
 /* главное превью + ссылка для заказа */
+
 .main-page {
   background-color: var(--background-color-one);
   padding-top: 200px;
   padding-bottom: 200px;
+  display: block;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .main-page-container {
@@ -227,6 +249,33 @@ body {
 .our-qualities-container-item {
   margin-left: 30px;
   flex-basis: calc((100% - 3 * 30px) / 4);
+}
+
+.our-qualities-container-item::before {
+  display: block;
+  margin-bottom: 30px;
+  content: "";
+  height: 120px;
+  border-radius: 4px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--background-color-two);
+}
+
+.our-qualities-container-item-icon:nth-child(1)::before {
+  background-image: url(../images/antenna-1.svg);
+}
+
+.our-qualities-container-item-icon:nth-child(2)::before {
+  background-image: url(../images/clock-icon.svg);
+}
+
+.our-qualities-container-item-icon:nth-child(3)::before {
+  background-image: url(../images/notebook-icon.svg);
+}
+
+.our-qualities-container-item-icon:nth-child(4)::before {
+  background-image: url(../images/astronaut-icon.svg);
 }
 
 .our-qualities-container-item:first-child {
