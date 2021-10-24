@@ -129,7 +129,15 @@ body {
 .header-contacts-link:last-child {
   margin-right: 0;
 }
+.mail-icon {
+  margin-right: 10px;
+  fill: var(--second-text-color);
+}
 
+.tel-icon {
+  margin-right: 10px;
+  fill: var(--second-text-color);
+}
 .list {
   list-style: none;
 }
@@ -150,6 +158,13 @@ body {
 .link:focus .mail-icon,
 .link:focus .tel-icon,
 .link:hover .tel-icon {
+  fill: var(--background-text-color);
+}
+.link:hover .mail-icon {
+  fill: var(--background-text-color);
+}
+
+.link:focus .mail-icon {
   fill: var(--background-text-color);
 }
 
@@ -175,19 +190,10 @@ body {
   padding-bottom: 32px;
 }
 
-.mail-icon {
-  margin-right: 10px;
-  fill: var(--second-text-color);
-}
 /* .mail-icon:hover,
 .mail-icon:focus {
   fill: lime;
 } */
-
-.tel-icon {
-  margin-right: 10px;
-  fill: var(--second-text-color);
-}
 
 /* главное превью + ссылка для заказа */
 
@@ -552,6 +558,22 @@ body {
 .map-address-list-item:last-child {
   margin-bottom: 0;
 }
+
+.footer-right {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.footer-links {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--header-color);
+  margin-bottom: 9px;
+}
+
 /* портфолио */
 .btn {
   cursor: pointer;
