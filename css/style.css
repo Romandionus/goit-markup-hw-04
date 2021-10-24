@@ -150,7 +150,7 @@ body {
 .link:focus .mail-icon,
 .link:focus .tel-icon,
 .link:hover .tel-icon {
-  background-color: var(--background-text-color);
+  fill: var(--background-text-color);
 }
 
 .list .link.current {
