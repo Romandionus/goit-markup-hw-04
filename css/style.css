@@ -500,8 +500,6 @@ body {
 
 .footer-homepage-link {
   display: flex;
-  flex: row;
-
   margin-bottom: 20px;
 }
 .address {
