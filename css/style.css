@@ -131,6 +131,7 @@ body {
 }
 .mail-icon {
   margin-right: 10px;
+
   fill: var(--second-text-color);
 }
 
@@ -174,7 +175,7 @@ body {
 
 /* ссылки контактов */
 .contacts-container {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
 }
@@ -189,11 +190,6 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
-/* .mail-icon:hover,
-.mail-icon:focus {
-  fill: lime;
-} */
 
 /* главное превью + ссылка для заказа */
 
