@@ -526,9 +526,12 @@ body {
 }
 .container-footer {
   display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  
 }
 .list-social-footer{
-  flex-direction: row;
+  /* flex-direction: row; */
 }
 .footer-left {
   margin-right: 70px;
