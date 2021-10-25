@@ -201,9 +201,6 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   display: block;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -487,43 +484,6 @@ body {
 .customers-link:focus .customers-icon {
   fill: var(--background-text-color);
 }
-/* .company-one {
-  padding-top: 23px;
-  padding-bottom: 22px;
-  padding-right: 65px;
-  padding-left: 64px;
-}
-
-.company-two {
-  padding-top: 19px;
-  padding-bottom: 21px;
-  padding-right: 65px;
-  padding-left: 65px;
-}
-.company-tree {
-  padding-top: 25px;
-  padding-bottom: 26px;
-  padding-right: 65px;
-  padding-left: 62px;
-}
-.company-four {
-  padding-top: 25px;
-  padding-bottom: 27px;
-  padding-right: 43px;
-  padding-left: 43px;
-}
-
-.company-five {
-  padding-top: 23px;
-  padding-bottom: 24px;
-  padding-right: 53px;
-  padding-left: 54px;
-}
-.company-six {
-  padding-top: 23px;
-  padding-bottom: 25px;
-  padding-right: 38px;
-  padding-left: 38px; */
 
 /* футер */
 
@@ -577,6 +537,10 @@ body {
   line-height: 1.71;
   color: var(--header-color);
   margin-bottom: 9px;
+}
+
+.container-footer {
+  display: flex;
 }
 
 /* портфолио */
