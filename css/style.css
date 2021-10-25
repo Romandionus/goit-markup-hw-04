@@ -131,7 +131,7 @@ body {
 }
 .mail-icon {
   margin-right: 10px;
-
+  height: 100%;
   fill: var(--second-text-color);
 }
 
@@ -175,13 +175,15 @@ body {
 
 /* ссылки контактов */
 .contacts-container {
-  display: block;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  /* align-items: center; */
+  /* justify-self: start; */
+  /* align-content: center; */
+  /* flex-grow: 1; */
 }
 
 .contact-link {
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -526,7 +528,8 @@ body {
 }
 
 .footer-homepage-link {
-  display: block;
+  display: flex;
+  flex: row;
 
   margin-bottom: 20px;
 }
