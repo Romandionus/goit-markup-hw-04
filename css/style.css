@@ -41,6 +41,8 @@ ul {
   --icon-color-passive: #afb1b8;
   --icon-color-active: #ffffff;
   --icon-color-dark: rgba(255, 255, 255, 0.1);
+  --shadow-all--: 0px 3px 2px rgba(0, 0, 0, 0.12),
+    0px 1px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -178,10 +180,6 @@ body {
 /* ссылки контактов */
 .contacts-container {
   display: flex;
-  /* align-items: center; */
-  /* justify-self: start; */
-  /* align-content: center; */
-  /* flex-grow: 1; */
 }
 
 .contact-link {
@@ -193,6 +191,7 @@ body {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 }
 
 /* главное превью + ссылка для заказа */
@@ -211,7 +210,7 @@ body {
     url(../images/hero-background.jpg);
   background-repeat: no-repeat;
   background-position: 50%;
-  background-size: contain;
+  background-size: cover;
   max-width: 1600px;
 }
 
@@ -406,8 +405,7 @@ body {
   margin-right: 30px;
   text-align: center;
   flex-basis: calc((100% - 3 * 30px) / 4);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-all--);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -452,8 +450,6 @@ body {
 .customers-back {
   width: 170px;
   height: 92px;
-  background-position: center;
-  background-repeat: no-repeat;
   border: 1px solid var(--icon-color-passive);
   border-radius: 4px;
 }
@@ -473,18 +469,12 @@ body {
   width: 100%;
   height: 100%;
   color: var(--icon-color-passive);
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 .customers-icon {
   fill: var(--icon-color-passive);
 }
 
-/* .customers-link:hover,
-.customers-link:focus {
-  color: var(--background-text-color);
-} */
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
   fill: var(--background-text-color);
@@ -544,7 +534,8 @@ body {
 .footer-links {
   font-size: 14px;
   font-style: normal;
-  line-height: 1.71;
+  font-weight: 700;
+  line-height: 1.14;
   color: var(--header-color);
   margin-bottom: 20px;
 }
@@ -557,12 +548,7 @@ body {
   display: flex;
   padding: 12px;
   background-color: var(--icon-color-dark);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.social-link-blue {
-  background-color: var(--background-text-color);
+  box-shadow: var(--shadow-all--);
 }
 
 .social-link-dark:hover,
@@ -601,8 +587,7 @@ body {
 .btn:focus {
   background-color: var(--background-text-color);
   color: var(--header-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-all--);
 }
 
 .btn-container-item {
@@ -635,12 +620,18 @@ body {
   margin-bottom: 30px;
   outline: 1px solid var(--background-border-color-one);
 }
-
+.container-list-filter-link {
+  display: block;
+  text-decoration: none;
+}
 .container-list-filter-item:hover,
 .container-list-filter-item:focus {
   cursor: pointer;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-all--);
+}
+
+.container-list-filter-link:focus {
+  box-shadow: var(--shadow-all--);
 }
 
 .container-list-filter-item-description {
@@ -649,9 +640,6 @@ body {
   padding-left: 24px;
   padding-right: 24px;
 }
-/* .container-list-filter-item:last-child {
-  margin-right: 0;
-} */
 
 .portfolio-content-description {
   line-height: 1.87;
